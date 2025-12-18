@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="my-portfolio.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Kokone Nakamura's portfolio</title>
+</head>
+<body>
+    <header class="logo">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="langToggle">EN/JP</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- HERO -->
+    <section id="hero" class="py-5 text-center">
+        <!-- En -->
+         <div class="en">
+            <h1>Hi! I'm Kokone Nakamura</h1>
+            <p>I'm a web developer creating websites that suit our clients.</p>
+            <a href="#works" class="btn btn-outline-light">View My Works</a>
+            <!-- <a href="#contact" class="btn btn-outline-light">Hire Me</a> -->
+         </div>
+
+         <!-- Jp -->
+          <div class="jp d-none">
+            <h1>Hi! I'm Kokone Nakamura</h1>
+            <p>クライアントに合ったWebサイトを制作しています。</p>
+            <a href="#works" class="btn btn-outline-light">制作実績を見る</a>
+            <!-- <a href="#contact" class="btn btn-outline-light">お問い合わせ</a> -->
+          </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about" class="py-5 text-center">
+        <div class="profile-photo">
+            <img src="images/profile.jpeg" alt="profile photo">
+        </div>
+        <!-- En -->
+         <div class="en">
+            <h2 class="mb-4">About Me</h2>
+            <p>I am from Japan and studied web development at an IT school.
+                <br>I am currently containuing to learn various skills and design techniques.
+                <br>My hobby is walking in nature and enjoy exploring new places.
+                <br>As a freelancer, I design and coding websites.
+            </p>
+         </div>
+
+        <!-- Jp -->
+         <div class="jp d-none">
+            <h1>自己紹介</h1>
+            <p>私は日本出身です。ITスクールでWeb制作を学びました。
+                <br>現在も、様々なスキルやデザインを勉強中です。
+                <br>趣味は自然の中を散歩したり、新しい場所を探索することです。
+                <br>フリーランサーとして、Webサイトのデザインとコーディングを行なっています!
+            </p>
+         </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-5 text-center">
+        <div class="container">
+            <h2 class="en mb-4">Skills</h2>
+            <h2 class="jp d-none mb-4">スキル</h2>
+
+            <!-- En -->
+            <div class="en row g-3">
+                <div class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>Frontend</h4>
+                        <p>HTML, CSS, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>Backend</h4>
+                        <p>PHP, Laravel</p>
+                    </div>
+                </div>
+                <div  class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>Design</h4>
+                        <p>Canva - Instagram feeds etc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jp -->
+            <div class="jp d-none row g-3">
+                <div class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>フロントエンド</h4>
+                        <p>HTML, CSS, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>バックエンド</h4>
+                        <p>PHP, Laravel</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skills-card p-3 text-center">
+                        <h4>デザイン</h4>
+                        <p>Canva - Instagramのフィード投稿など</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works" class="py-5 text-center">
+        <div class="container">
+            <h2 class="en mb-4">Works</h2>
+            <h2 class="jp d-none mb-4">制作実績</h2>
+
+            <!-- En -->
+            <div class="row en">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/coffeebean.png" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafe Landing Page</h5>
+                            <p class="card-text">HTML, CSS</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- <div class="col-md-4 mb-4 en">
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Web app</h5>
+                            <p class="card-text">OOOOOOO</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div id="carouselCard1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/tokyo1.png" class="d-block w-100" alt="Instagram Feed 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/okinawa.png" class="d-block w-100" alt="Instagram Feed 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sapporo.png" class="d-block w-100" alt="Instagram Feed 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/tokyo2.png" class="d-block w-100" alt="Instagram Feed 4">
+                                </div>
+                            </div>
+                    
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCard1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Instagram feeds</h5>
+                                <p class="card-text">Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jp -->
+            <div class="row jp" style="display: none;">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/coffeebean.png" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">カフェWebサイト</h5>
+                            <p class="card-text">HTML, CSS, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-md-4 mb-4 jp d-none">
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">Web アプリ</h5>
+                            <p class="card-text">OOOOOOO</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div id="carouselCard1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/tokyo1.png" class="d-block w-100" alt="Instagram Feed 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/okinawa.png" class="d-block w-100" alt="Instagram Feed 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/sapporo.png" class="d-block w-100" alt="Instagram Feed 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/tokyo2.png" class="d-block w-100" alt="Instagram Feed 4">
+                                </div>
+                            </div>
+                    
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCard1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCard1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                    
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Instagram feeds</h5>
+                                <p class="card-text">Canva</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-5 text-center mb-5">
+        <div class="container">
+
+            <h2 class="en mb-4">Services</h2>
+            <h2 class="jp d-none mb-4">提供できるサービス</h2>
+
+            <!-- En -->
+            <div class="en row g-4 justify-content-center">
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-paint-brush fa-3x mb-3"></i>
+                    <h5>Website Design</h5>
+                    <p>Responsive websites with modern design</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-laptop-code fa-3x mb-3"></i>
+                    <h5>Website Development</h4>
+                    <p>Building responsive websites with HTML, CSS, and Bootstrap for all devices.</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-palette fa-3x mb-3"></i>
+                    <h5>Canva Design</h4>
+                    <p>Designing Instagram posts, banners, and other social media content using Canva.</p>
+                </div>
+            </div>
+
+            <!-- Jp -->
+            <div class="row g-4 justify-content-center jp d-none mt-4">
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-paint-brush fa-3x mb-3"></i>
+                    <h5>Webデザイン</h5>
+                    <p>ブランドに合った、使いやすく魅力的なWebサイトを制作します。</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-laptop-code fa-3x mb-3"></i>
+                    <h5>Web開発</h5>
+                    <p>HTML, CSS, Bootstrapを使って、すべてのデバイスで見やすいレスポンシブサイトを作ります。</p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <i class="fa-solid fa-palette fa-3x mb-3"></i>
+                    <h5>Canvaデザイン</h5>
+                    <p>Instagram投稿やバナーなどのSNSコンテンツをCanvaでデザインします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!-- <section id="contact" class="py-5 text-center">
+        <div class="container"> -->
+
+            <!-- En & Ja -->
+            <!-- <h2 class="en mb-4">Contact</h2>
+            <h2 class="jp d-none mb-4">お問い合わせ</h2>
+
+            <form action="" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label en">Name</label>
+                    <label for="name" class="form-label jp d-none">お名前</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label en">Email</label>
+                    <label for="email" class="form-label jp d-none">メール</label>
+                    <input type="emal" class="form-control" id="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label en">Message</label>
+                    <label for="message" class="form-label jp d-none">メッセージ</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary en">Send</button>
+                <button type="submit" class="btn btn-primary jp d-none">送信</button>
+            </form>
+        </div>
+    </section> -->
+
+    <footer class="text-center py-4">
+        @ 2025 Kokone Nakamura - Portfolio
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="my-portfolio.js"></script>
+</body>
+</html>
