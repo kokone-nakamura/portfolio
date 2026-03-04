@@ -154,6 +154,16 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.card-title a {
+    color: #3E2723; 
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: #3E2723; 
+    text-decoration: underline;
+}
+
 .card-text {
     color: #8D6E63;
     font-size: 14px;
